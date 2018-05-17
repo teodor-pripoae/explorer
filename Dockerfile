@@ -7,6 +7,7 @@ WORKDIR /usr/src/app
 # Install app dependencies
 COPY package.json /usr/src/app/
 COPY yarn.lock /usr/src/app/
+ADD entrypoint.sh /entrypoint.sh
 RUN yarn
 
 # Bundle app source
