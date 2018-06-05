@@ -2,7 +2,7 @@
 
 set -ex
 
-sed -i 's/138.68.77.24:46657/'$RPC_URL'/g' src/store/modules/blockchain.js
+sed -i 's/https://nylira.net/'$RPC_URL'/g' src/store/modules/blockchain.js
 
 yarn build
 
